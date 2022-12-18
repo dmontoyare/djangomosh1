@@ -37,14 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'playground',
-    'debug_toolbar',
+    #'debug_toolbar',
     'store',
     'tags',
     'likes'
 ]
 
 MIDDLEWARE = [
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+    #'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -56,7 +56,7 @@ MIDDLEWARE = [
 
 INTERNAL_IPS = [
     # ...
-    '127.0.0.1',
+    #'127.0.0.1',
     # ...
 ]
 
@@ -88,12 +88,14 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'storefront',
-        'HOST': 'localhost',
+        'HOST': '172.19.144.1',
         'USER': 'root',
-        'PASSWORD': '1234'
+        'PASSWORD': '1234',
     }
 }
 
+
+''''''
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
